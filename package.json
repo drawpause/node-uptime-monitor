@@ -1,0 +1,15 @@
+{
+  "name": "uptime-monitor-with-node",
+  "version": "1.0.0",
+  "description": "A simple uptime monitor with Node.js and Slack updates",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Fady Makram <fmakram1@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "request": "^2.82.0"
+  }
+}
