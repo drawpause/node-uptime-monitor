@@ -24,7 +24,7 @@ let serviceStatus = {}
 
 services.forEach(service => {
   serviceStatus[service.url] = {
-    status: 'DOWN', // initialize all services as operational when we start
+    status: 'UP', // initialize all services as operational when we start
     responseTimes: [], // array containing the responses times for last 3 pings
     timeout: service.timeout // load up the timout from the config
   }
