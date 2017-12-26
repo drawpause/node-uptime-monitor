@@ -47,10 +47,10 @@ services.forEach(service => {
           // compute average of last 3 response times
           let avgResTime = responseTimes.reduce((a, b) => a + b, 0) / responseTimes.length
           let currService = serviceStatus[service.url]
-
+          
           if (avgResTime > currService.timeout && currService.status !== 'DEGRADED') {
-            currService.status = 'DEGRADED'
-            postToDiscord(service.url, service.name)
+            //currService.status = 'DEGRADED'
+            //postToDiscord(service.url, service.name)
           } else if (avgResTime < currService.timeout && currService.status !== 'UP') {
             currService.status = 'UP'
             postToDiscord(service.url, service.name)
