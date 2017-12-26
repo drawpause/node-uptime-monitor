@@ -10,6 +10,9 @@ Check out the full tutorial on [coligo](https://coligo.io/uptime-monitor-with-no
 npm install
 ```
 
+###
+Rename `services.example.js` to `services.js` and edit accordingly
+
 ### Run the Uptime Monitor
 
 ```bash
