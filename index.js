@@ -1,5 +1,3 @@
-import { disconnect } from 'cluster';
-
 require('dotenv').config()
 
 const request = require('request')
