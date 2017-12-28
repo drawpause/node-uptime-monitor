@@ -1,3 +1,5 @@
+import { disconnect } from 'cluster';
+
 require('dotenv').config()
 
 const request = require('request')
@@ -80,6 +82,8 @@ const postToDiscord = (serviceUrl, serviceName) => {
   if (serviceStatus[serviceUrl].status !== 'DOWN') {
     discordPayload.embeds[0].thumbnail.url = 'https://www.iconexperience.com/_img/g_collection_png/standard/512x512/ok.png'
   }
+
+  console.log(discordPayload.embeds.title);
 
   request({
     method: 'POST',
